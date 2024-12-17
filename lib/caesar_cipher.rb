@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 ALPHABET_LENGTH = 'z'.ord - 'a'.ord + 1
 
 def caesar_cipher(message, shift)
