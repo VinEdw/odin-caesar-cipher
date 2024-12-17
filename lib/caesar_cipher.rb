@@ -5,7 +5,7 @@ def caesar_cipher(message, shift)
 
   shifted_characters = characters.map do |character|
     if character.match?(/[a-z]/i)
-      starting_ord = (character == character.upcase) ? 'A'.ord : 'a'.ord
+      starting_ord = character == character.upcase ? 'A'.ord : 'a'.ord
       new_ord = (character.ord - starting_ord + shift) % ALPHABET_LENGTH + starting_ord
       new_ord.chr
     else
